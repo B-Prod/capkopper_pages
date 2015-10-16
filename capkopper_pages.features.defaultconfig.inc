@@ -12,6 +12,7 @@ function capkopper_pages_defaultconfig_features() {
     'capkopper_pages' => array(
       'default_linkit_profiles' => 'default_linkit_profiles',
       'strongarm' => 'strongarm',
+      'user_default_permissions' => 'user_default_permissions',
     ),
   );
 }
@@ -195,4 +196,172 @@ function capkopper_pages_defaultconfig_strongarm() {
   $export['language_content_type_panopoly_page'] = $strongarm;
 
   return $export;
+}
+
+/**
+ * Implements hook_defaultconfig_user_default_permissions().
+ */
+function capkopper_pages_defaultconfig_user_default_permissions() {
+  $permissions = array();
+
+  // Exported permission: 'administer panelizer node panopoly_landing_page defaults'.
+  $permissions['administer panelizer node panopoly_landing_page defaults'] = array(
+    'name' => 'administer panelizer node panopoly_landing_page defaults',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'editor' => 'editor',
+    ),
+    'module' => 'panelizer',
+  );
+
+  // Exported permission: 'administer panelizer node panopoly_page breadcrumbs'.
+  $permissions['administer panelizer node panopoly_page breadcrumbs'] = array(
+    'name' => 'administer panelizer node panopoly_page breadcrumbs',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'editor' => 'editor',
+    ),
+    'module' => 'panelizer',
+  );
+
+  // Exported permission: 'administer panelizer node panopoly_page content'.
+  $permissions['administer panelizer node panopoly_page content'] = array(
+    'name' => 'administer panelizer node panopoly_page content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'editor' => 'editor',
+    ),
+    'module' => 'panelizer',
+  );
+
+  // Exported permission: 'administer panelizer node panopoly_page context'.
+  $permissions['administer panelizer node panopoly_page context'] = array(
+    'name' => 'administer panelizer node panopoly_page context',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'editor' => 'editor',
+    ),
+    'module' => 'panelizer',
+  );
+
+  // Exported permission: 'administer panelizer node panopoly_page defaults'.
+  $permissions['administer panelizer node panopoly_page defaults'] = array(
+    'name' => 'administer panelizer node panopoly_page defaults',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'editor' => 'editor',
+    ),
+    'module' => 'panelizer',
+  );
+
+  // Exported permission: 'administer panelizer node panopoly_page layout'.
+  $permissions['administer panelizer node panopoly_page layout'] = array(
+    'name' => 'administer panelizer node panopoly_page layout',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'editor' => 'editor',
+    ),
+    'module' => 'panelizer',
+  );
+
+  // Exported permission: 'administer panelizer node panopoly_page overview'.
+  $permissions['administer panelizer node panopoly_page overview'] = array(
+    'name' => 'administer panelizer node panopoly_page overview',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'editor' => 'editor',
+    ),
+    'module' => 'panelizer',
+  );
+
+  // Exported permission: 'administer panelizer node panopoly_page settings'.
+  $permissions['administer panelizer node panopoly_page settings'] = array(
+    'name' => 'administer panelizer node panopoly_page settings',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'editor' => 'editor',
+    ),
+    'module' => 'panelizer',
+  );
+
+  // Exported permission: 'administer panelizer taxonomy_term panopoly_categories breadcrumbs'.
+  $permissions['administer panelizer taxonomy_term panopoly_categories breadcrumbs'] = array(
+    'name' => 'administer panelizer taxonomy_term panopoly_categories breadcrumbs',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'editor' => 'editor',
+    ),
+    'module' => 'panelizer',
+  );
+
+  // Exported permission: 'administer panelizer taxonomy_term panopoly_categories content'.
+  $permissions['administer panelizer taxonomy_term panopoly_categories content'] = array(
+    'name' => 'administer panelizer taxonomy_term panopoly_categories content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'editor' => 'editor',
+    ),
+    'module' => 'panelizer',
+  );
+
+  // Exported permission: 'administer panelizer taxonomy_term panopoly_categories context'.
+  $permissions['administer panelizer taxonomy_term panopoly_categories context'] = array(
+    'name' => 'administer panelizer taxonomy_term panopoly_categories context',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'editor' => 'editor',
+    ),
+    'module' => 'panelizer',
+  );
+
+  // Exported permission: 'administer panelizer taxonomy_term panopoly_categories defaults'.
+  $permissions['administer panelizer taxonomy_term panopoly_categories defaults'] = array(
+    'name' => 'administer panelizer taxonomy_term panopoly_categories defaults',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'editor' => 'editor',
+    ),
+    'module' => 'panelizer',
+  );
+
+  // Exported permission: 'administer panelizer taxonomy_term panopoly_categories layout'.
+  $permissions['administer panelizer taxonomy_term panopoly_categories layout'] = array(
+    'name' => 'administer panelizer taxonomy_term panopoly_categories layout',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'editor' => 'editor',
+    ),
+    'module' => 'panelizer',
+  );
+
+  // Exported permission: 'administer panelizer taxonomy_term panopoly_categories overview'.
+  $permissions['administer panelizer taxonomy_term panopoly_categories overview'] = array(
+    'name' => 'administer panelizer taxonomy_term panopoly_categories overview',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'editor' => 'editor',
+    ),
+    'module' => 'panelizer',
+  );
+
+  // Exported permission: 'administer panelizer taxonomy_term panopoly_categories settings'.
+  $permissions['administer panelizer taxonomy_term panopoly_categories settings'] = array(
+    'name' => 'administer panelizer taxonomy_term panopoly_categories settings',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'editor' => 'editor',
+    ),
+    'module' => 'panelizer',
+  );
+
+  // Exported permission: 'delete terms in panopoly_categories'.
+  $permissions['delete terms in panopoly_categories'] = array(
+    'name' => 'delete terms in panopoly_categories',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'taxonomy',
+  );
+
+  return $permissions;
 }
