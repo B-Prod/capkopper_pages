@@ -3,9 +3,3 @@
  * @file
  * Code for the capKopper Pages feature.
  */
-
-include_once 'capkopper_pages.features.inc';
-/**
- * @file
- * Code for the capKopper Pages feature.
- */
